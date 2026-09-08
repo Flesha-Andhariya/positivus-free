@@ -1,0 +1,82 @@
+/* ===================== RESPONSIVE 1200px ===================== */
+@media (max-width: 1200px) {
+    /* Header */
+    header {
+        margin-top: 40px;
+    }
+    /* Navigation */
+    .menu {
+        gap: 15px;
+    }
+    .nav a {
+        font-size: 17px;
+    }
+    a.btn {
+        width: 190px;
+    }
+    /* Hero */
+    .hero-flex {
+        gap: 40px;
+    }
+    .left-hero h1 {
+        font-size: 50px;
+    }
+    /*Service cards*/ 
+    .card-w,
+    .card-b,
+    .card-g {
+        padding: 40px;
+		width:100%;
+    }
+    .service-grid {
+        gap: 25px;
+    }
+    /* CTA */
+    .cta1 {
+        padding: 40px;
+    }
+    .cta-content {
+        width: 45%;
+    }
+    /* Case study */
+    .cards {
+        padding: 50px 40px;
+        gap: 40px;
+    }
+    /* Contact */
+    .contact-box {
+        padding: 50px;
+        gap: 40px;
+    }
+    .contact-form {
+        width: 55%;
+    }
+    .contact button {
+        width: 100%;
+    }
+    /* Team */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   /* Process / Accordion*/ 
+    .accordion-item-active {
+        width: 100%;
+    }
+    .accordion-header {
+        padding: 35px 45px;
+    }
+    .accordion-content {
+        padding: 0 45px 35px;
+    }
+    /* Footer */
+    .ff {
+        padding: 50px 40px;
+    }
+    .footer-nav {
+        gap: 25px;
+    }
+    .subscribe {
+        padding: 40px 25px;
+    }
+}
+
