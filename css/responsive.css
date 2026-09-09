@@ -45,8 +45,8 @@
     }
     /* Contact */
     .contact-box {
-        padding: 50px;
-        gap: 40px;
+		padding: 50px 0 50px 50px;
+		gap: 40px;
     }
     .contact-form {
         width: 55%;
@@ -54,6 +54,10 @@
     .contact button {
         width: 100%;
     }
+	/*testimonial*/
+	.testimonial-card {
+		margin-top:35px;
+	}
     /* Team */
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -79,10 +83,6 @@
         padding: 40px 25px;
     }
 }
-
-
-
-
 /* ===================== RESPONSIVE 992px ===================== */
 @media (max-width: 992px) {
     /* Header */
@@ -129,15 +129,15 @@
     }
     /* Contact */
     .contact-box {
-        padding: 40px;
+      padding: 40px 0 40px 40px;
         gap: 30px;
     }
-    .contact-form {
-        width: 55%;
-    }
+	/*testimonial*/
+	.testimonial-card {
+		margin-top:18px;
+	}
     /* Team */
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     /* Process / Accordion */
@@ -155,7 +155,461 @@
         gap: 18px;
     }
     .subscribe {
-        align-items: center;
+       align-items: center;
     }
 }
+/* ===================== RESPONSIVE 768px ===================== */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        margin-top: 20px;
+    }
+	.heading span {
+		padding: 5px 7px;
+		font-size: 30px;
+	}
+	/*HAMBURGER MENU*/
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        font-size: 32px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 100px 30px 30px;
+        box-shadow: -5px 0 20px rgba(0,0,0,.15);
+        transition: right .4s ease;
+        z-index: 1000;
+    }
+    #menu-toggle:checked ~ .menu {
+        right: 0;
+    }
+    .menu a {
+        font-size: 18px;
+        width: 100%;
+    }
+    .menu a.btn {
+        width: 100%;
+    }
+    /* Hero */
+    .hero-flex {
+        gap: 40px;
+        margin-top: 50px;
+    }
+    .left-hero h1 {
+        font-size: 32px;
+    }
+    .left-hero p {
+        font-size: 12px;
+        margin: 25px 0;
+    }
+	.btn1 {
+		padding: 15px;
+	}
+	.right-hero img {
+		width: 400px;
+		height: auto;
+	}
+    /* Services */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .card-w,
+    .card-b,
+    .card-g {
+        width: 100%;
+        height: 280px;
+        padding: 30px;
+    }
+    /* CTA */
+    .cta1 {
+        padding: 25px;
+    }
+    .cta-content {
+        width: 55%;
+    }
+    .cta-content h3 {
+        font-size: 26px;
+    }
+    .btn2 {
+        width: 240px;
+    }
+    /* Case Study */
+    .cards {
+        padding: 35px 30px;
+        gap: 25px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    /* Contact */
+    .contact-box {
+      padding: 40px 0 40px 40px;
+        gap: 25px;
+    }
+    .contact-form {
+        width: 60%;
+    }
+    .radio-group {
+        gap: 25px;
+    }
+    .contact button {
+        width: 100%;
+    }
+    /* Team */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .team-card {
+        padding: 20px;
+    }
+    /* Testimonial */
+    .testimonial-card {
+        width: calc(50% - 10px);
+        min-width: calc(50% - 10px);
+        margin-top: 15px;
+    }
+    .quote-box {
+        padding: 22px 20px;
+    }
+	.testimonial-container {
+			height:400px;
+	}
+    /* Process / Accordion */
+    .accordion-item-active {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .accordion-header {
+        padding: 25px 30px;
+    }
+    .accordion-content {
+        padding: 0 30px 25px;
+    }
+    .no {
+        font-size: 25px;
+        gap: 18px;
+    }
+    .number {
+        font-size: 50px;
+    }
+    /* Footer */
+    .ff {
+        padding: 35px 25px;
+    }
+    .footer-top {
+        margin-bottom: 45px;
+    }
+    .footer-nav {
+        gap: 15px;
+    }
+    .footer-nav a {
+        font-size: 12px;
+    }
+	.contact{
+		margin: 0 auto;
+	}
+    .subscribe {
+        padding: 25px 20px;
+        gap: 15px;
+		margin: 0 auto;
+		flex-direction: column;
+    }
+    .subscribe input {
+        font-size: 16px;
+    }
+    .subscribe button {
+        font-size: 16px;
+		width: 250px;
+    }
+}
+/* ===================== RESPONSIVE 480px ===================== */
+@media (max-width: 480px) {
 
+    /* Header */
+    header {
+        margin-top: 15px;
+    }
+    .heading {
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+		flex-direction: column;
+    }
+    .heading span {
+        font-size: 24px;
+        padding: 4px 6px;
+    }
+    .heading p {
+        font-size: 14px;
+    }
+    /* Hamburger Menu */
+    .menu {
+        width: 250px;
+        padding: 90px 25px 25px;
+        gap: 20px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    /* Hero */
+    .hero-flex {
+        gap: 30px;
+        margin-top: 35px;
+		flex-direction: column;
+    }
+    .left-hero h1 {
+        font-size: 30px;
+		text-align: center;
+    }
+    .left-hero p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .btn1 {
+        width: 100%;
+        padding: 16px;
+    }
+    .right-hero img {
+        width: 100%;
+    }
+    /* Services */
+    .service-grid {
+        gap: 20px;
+    }
+    .card-w,
+    .card-b,
+    .card-g {
+        width: 100%;
+        height: 250px;
+        padding: 25px;
+        border-radius: 30px;
+    }
+    .content-w,
+    .content-b,
+    .content-g,
+    .content-bg {
+        height: 190px;
+    }
+    .content-w h1 span,
+    .content-bg h1 span,
+    .content-b h1 span,
+    .content-g h1 span {
+        font-size: 20px;
+    }
+    .arrow-bg,
+    .arrow-wb {
+        font-size: 16px;
+        gap: 10px;
+    }
+	/* CTA */
+	.cta1 {
+		position: relative;
+	}
+	/* Background image */
+	.cta1::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: url("../img/smaily.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		opacity: 0.18;
+		z-index: 0;
+	}
+	.cta-image{
+		display:none;
+	}
+	/* Content stays above image */
+	.cta-content,
+	.btn2 {
+		position: relative;
+		z-index: 1;
+	}
+	.cta-content {
+		width: 100%;
+	}
+	.cta-content h3 {
+		font-size: 24px;
+	}
+	.cta-content p {
+		font-size: 16px;
+	}
+	.btn2 {
+		width: 100%;
+	}
+    /* Case Study */
+    .cards {
+        flex-direction: column;
+        padding: 30px 25px;
+        gap: 25px;
+        border-radius: 30px;
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+    /* Contact */
+	.contact-box {
+		position: relative;
+		overflow: hidden;
+		flex-direction: column;
+		padding: 30px 25px;
+		gap: 25px;
+		border-radius: 30px;
+	}
+	/* Background image */
+	.contact-box::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: url("../img/smaily.png") center / contain no-repeat;
+		opacity: 0.25;
+		z-index: 0;
+	}
+	/* Keep form above image */
+	.contact-form {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
+	.radio-group {
+		gap: 15px;
+		margin-bottom: 25px;
+	}
+	.form-group input {
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+	.form-group textarea {
+		height: 180px;
+		padding: 15px 20px;
+		font-size: 16px;
+	}
+	.contact button {
+		width: 100%;
+		height: 60px;
+		margin-top: 25px;
+	}
+	/* Hide original image */
+	.contact-art {
+		display: none;
+	}
+    /* Team */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .team-card {
+        padding: 20px;
+    }
+    /* Testimonial */
+    .testimonial-container {
+        height: 420px;
+        border-radius: 30px;
+    }
+    .testimonial-card {
+        width: calc(100% - 40px);
+        min-width: calc(100% - 40px);
+        margin-top: 15px;
+    }
+    .quote-box {
+        padding: 20px 18px;
+        border-radius: 22px;
+    }
+    .client-info {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .prev-btn {
+        left: 20%;
+    }
+    .next-btn {
+        right: 20%;
+    }
+    /* Process / Accordion */
+    .accordion-item,
+    .accordion-item-active {
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+    .accordion-item-active {
+        width: 100%;
+        padding: 25px;
+    }
+    .accordion-header {
+        padding: 22px 25px;
+    }
+    .accordion-content {
+        padding: 0 25px 20px;
+    }
+    .accordion-content p {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+    .no {
+        font-size: 20px;
+        gap: 12px;
+    }
+    .number {
+        font-size: 40px;
+    }
+    /* Footer */
+    .ff {
+        padding: 30px 20px;
+        border-radius: 30px 30px 0 0;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 35px;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .footer-nav a {
+        font-size: 15px;
+    }
+    .footer-middle {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .subscribe {
+        width: 100%;
+        padding: 20px;
+    }
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+        height: 58px;
+        font-size: 16px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 15px;
+    }
+}
