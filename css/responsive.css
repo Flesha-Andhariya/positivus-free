@@ -80,3 +80,82 @@
     }
 }
 
+
+
+
+/* ===================== RESPONSIVE 992px ===================== */
+@media (max-width: 992px) {
+    /* Header */
+    header {
+        margin-top: 30px;
+    }
+    /* Navigation */
+    .menu {
+        gap: 10px;
+    }
+    .nav a {
+        font-size: 15px;
+    }
+    a.btn {
+        width: 160px;
+    }
+    /* Hero */
+    .hero-flex {
+        gap: 30px;
+    }
+    .left-hero h1 {
+        font-size: 42px;
+    }
+    .left-hero p {
+        font-size: 18px;
+    }
+    /* Service Cards */
+    .service-grid {
+        gap: 20px;
+    }
+    .card-w,
+    .card-b,
+    .card-g {
+        padding: 30px;
+    }
+    /* CTA */
+    .cta-content {
+        width: 50%;
+    }
+    /* Case Study */
+    .cards {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+    /* Contact */
+    .contact-box {
+        padding: 40px;
+        gap: 30px;
+    }
+    .contact-form {
+        width: 55%;
+    }
+    /* Team */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    /* Process / Accordion */
+    .accordion-header {
+        padding: 30px 35px;
+    }
+    .accordion-content {
+        padding: 0 35px 30px;
+    }
+    /* Footer */
+    .ff {
+        padding: 40px 30px;
+    }
+    .footer-nav {
+        gap: 18px;
+    }
+    .subscribe {
+        align-items: center;
+    }
+}
+
