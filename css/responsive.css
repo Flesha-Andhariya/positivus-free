@@ -84,83 +84,9 @@
         padding: 40px 25px;
     }
 }
+
 /* ===================== RESPONSIVE 992px ===================== */
 @media (max-width: 992px) {
-    /* Header */
-    header {
-        margin-top: 30px;
-    }
-    /* Navigation */
-    .menu {
-        gap: 10px;
-    }
-    .nav a {
-        font-size: 15px;
-    }
-    a.btn {
-        width: 160px;
-    }
-    /* Hero */
-    .hero-flex {
-        gap: 30px;
-    }
-    .left-hero h1 {
-        font-size: 42px;
-    }
-    .left-hero p {
-        font-size: 18px;
-    }
-    /* Service Cards */
-    .service-grid {
-        gap: 20px;
-    }
-    .card-w,
-    .card-b,
-    .card-g {
-        padding: 30px;
-    }
-    /* CTA */
-    .cta-content {
-        width: 50%;
-    }
-    /* Case Study */
-    .cards {
-        padding: 40px 30px;
-        gap: 30px;
-    }
-    /* Contact */
-    .contact-box {
-      padding: 40px 0 40px 40px;
-        gap: 30px;
-    }
-	/*testimonial*/
-	.testimonial-card {
-		margin-top:18px;
-	}
-    /* Team */
-    .team-grid {
-        gap: 20px;
-    }
-    /* Process / Accordion */
-    .accordion-header {
-        padding: 30px 35px;
-    }
-    .accordion-content {
-        padding: 0 35px 30px;
-    }
-    /* Footer */
-    .ff {
-        padding: 40px 30px;
-    }
-    .footer-nav {
-        gap: 18px;
-    }
-    .subscribe {
-       align-items: center;
-    }
-}
-/* ===================== RESPONSIVE 768px ===================== */
-@media (max-width: 768px) {
     /* Header */
     header {
         margin-top: 20px;
@@ -217,10 +143,6 @@
     }
 	.btn1 {
 		padding: 15px;
-	}
-	.right-hero img {
-		width: 400px;
-		height: auto;
 	}
     /* Services */
     .service-grid {
@@ -338,8 +260,8 @@
 		width: 250px;
     }
 }
-/* ===================== RESPONSIVE 480px ===================== */
-@media (max-width: 480px) {
+/* ===================== RESPONSIVE 768px ===================== */
+@media (max-width: 768px) {
     /* Header */
     header {
         margin-top: 0px;
@@ -372,9 +294,10 @@
         gap: 30px;
         margin: 35px 0px 35px 0;
 		flex-direction: column;
+		align-items: center;
     }
     .left-hero h1 {
-        font-size: 30px;
+        font-size: 35px;
 		text-align: center;
     }
     .left-hero p {
@@ -385,7 +308,10 @@
         width: 100%;
         padding: 16px;
     }
-    .right-hero img {
+	.left-hero{
+        width: 100%;		
+	}
+	 .right-hero img{
         width: 100%;
     }
     /* Services */
@@ -630,8 +556,8 @@
         font-size: 15px;
     }
 }
-/* ===================== RESPONSIVE 360px ===================== */
-@media (max-width: 360px) {
+/* ===================== RESPONSIVE 480px ===================== */
+@media (max-width: 480px) {
     /* Header */
     .heading {
         gap: 10px;
@@ -810,5 +736,110 @@
     .footer-bottom p,
     .footer-bottom a {
         font-size: 14px;
+    }
+}
+/* ===================== RESPONSIVE 360px ===================== */
+@media (max-width: 360px) {
+
+    /* Header */
+    .heading span {
+        font-size: 22px;
+    }
+
+    .heading p {
+        font-size: 14px;
+    }
+
+    /* Hamburger */
+    .menu {
+        width: 210px;
+        padding: 75px 18px 18px;
+    }
+
+    /* Hero */
+    .left-hero h1 {
+        font-size: 24px;
+    }
+
+    .left-hero p {
+        font-size: 14px;
+    }
+
+    /* Services */
+    .card-w,
+    .card-b,
+    .card-g {
+        height: 215px;
+        padding: 18px;
+    }
+
+    .image img {
+        width: 125px;
+        margin-left: 20px;
+    }
+
+    .content-w h1 span,
+    .content-b h1 span,
+    .content-g h1 span,
+    .content-bg h1 span {
+        font-size: 13px;
+    }
+
+    /* CTA */
+    .cta1 {
+        padding: 18px;
+    }
+
+    .cta-content h3 {
+        font-size: 20px;
+    }
+
+    /* Contact */
+    .contact-box {
+        padding: 20px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    /* Process */
+    .accordion-header {
+        padding: 16px 18px;
+    }
+
+    .accordion-item-active {
+        padding: 18px;
+    }
+
+    .number {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    .ff {
+        padding: 22px 12px;
+    }
+
+    .footer-nav a {
+        font-size: 13px;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        font-size: 14px;
+    }
+	/*testimonial*/
+   .testimonial-container {
+        height: 460px;
+    }
+	.next-btn {
+        right: 12%;
+		margin: 6px;
+    }
+	.prev-btn {
+		left: 12%;
+		margin: 6px;
     }
 }
