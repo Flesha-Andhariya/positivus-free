@@ -1,8 +1,48 @@
-const logoTrack = document.querySelector(".logo-track");
+/*const logoTrack = document.querySelector(".logo-track");
 const logos = Array.from(logoTrack.children);
 logos.forEach((logo) => {
     const clone = logo.cloneNode(true);
     logoTrack.appendChild(clone);
+});*/
+
+$(document).ready(function () {
+   $(".logo-track").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 800,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
 
 const cards = document.querySelectorAll(".testimonial-card");

@@ -136,10 +136,14 @@ a.btn:hover{
 .logo-track {
     display: flex;
     gap: 70px;
-    animation: logoSlide 10s linear infinite;
+  /*  animation: logoSlide 10s linear infinite;*/
 }
 .logo-track img {
     object-fit: contain;
+}
+.img{
+		width:100%;
+
 }
 .logo-track:hover {
     animation-play-state: paused;
@@ -152,6 +156,14 @@ a.btn:hover{
     to {
         transform: translateX(-50%);
     }
+}
+.logo-track .slick-slide {
+    height: 10%;
+	padding: 0 60px !important;
+
+}
+.logo-track {
+    overflow: hidden;
 }
 /*****************************footer*****************************/
 .ff{
